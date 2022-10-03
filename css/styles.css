@@ -97,9 +97,11 @@ button {
   margin-right: 50px;
 }
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   color: var(--title-color);
 }
 .nav-link:hover,
@@ -117,9 +119,11 @@ button {
   margin-right: 50px;
 }
 .contacts-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   color: var(--text-color);
 }
 .contacts-link:hover,
@@ -276,8 +280,8 @@ button {
 .portfolio-item {
   flex-basis: calc((100% - 2 * 30) / 3);
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-box:hover,
+.portfolio-item-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
