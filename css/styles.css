@@ -29,6 +29,7 @@ p {
   margin: 0;
 }
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -38,10 +39,8 @@ img {
   height: auto;
 }
 button {
-  display: block;
-  margin: 0 auto;
   cursor: pointer;
-  border: none;
+  border-color: transparent;
   border-radius: 4px;
 }
 .section {
@@ -52,13 +51,8 @@ button {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
+
 .link {
   text-decoration: none;
 }
@@ -80,8 +74,6 @@ button {
 /* -----------------------Header-------------------- */
 .header {
   border-bottom: 1px solid var(--line-color);
-  padding-bottom: 25px;
-  padding-top: 24px;
 }
 .header-container {
   display: flex;
@@ -136,7 +128,8 @@ button {
 }
 /* ----------------------Hero--------------------- */
 .hero {
-  background: var(--footer-background);
+  text-align: center;
+  background-color: var(--footer-background);
   padding-bottom: 200px;
   padding-top: 200px;
 }
@@ -148,7 +141,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--special-text-color);
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -157,18 +150,16 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--special-text-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: var(--accent-background);
+  background-color: var(--accent-background);
 }
 /* -----------------------------Peculiarities-------------------------------- */
 .peculiarities-list {
@@ -208,7 +199,7 @@ button {
 }
 /* ---------------------------------Team----------------------------------- */
 .team {
-  background: var(--secondary-background);
+  background-color: var(--secondary-background);
 }
 .team-list {
   display: flex;
@@ -223,7 +214,7 @@ button {
   margin-bottom: 50px;
 }
 .team-item {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
   background-color: var(--special-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -269,12 +260,12 @@ button {
   border: none;
   border-radius: 4px;
   color: var(--title-color);
-  background: var(--secondary-background);
+  background-color: var(--secondary-background);
   padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--special-text-color);
 }
 .portfolio-wrap {
@@ -283,7 +274,7 @@ button {
   border-top: none;
 }
 .portfolio-item {
-  width: 370px;
+  flex-basis: calc((100% - 2 * 30) / 3);
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -305,7 +296,7 @@ button {
 }
 /* ------------------------------------------Footer-------------------------------------- */
 .footer {
-  background: var(--footer-background);
+  background-color: var(--footer-background);
   padding-bottom: 60px;
   padding-top: 60px;
 }
